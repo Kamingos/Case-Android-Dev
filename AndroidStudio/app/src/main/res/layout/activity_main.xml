@@ -1,18 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/gray">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="8dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="8dp" />
+
+    <ImageButton
+        android:id="@+id/expand_btn"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/expand_more"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/chat_btn"
+        android:layout_width="@dimen/icons_up"
+        android:layout_height="@dimen/icons_up"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/chat"
+        app:layout_constraintEnd_toStartOf="@id/group_btn"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/line_start"
+        app:layout_constraintTop_toBottomOf="@id/expand_btn" />
+
+    <ImageButton
+        android:id="@+id/group_btn"
+        android:layout_width="@dimen/icons_up"
+        android:layout_height="@dimen/icons_up"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/group"
+        app:layout_constraintEnd_toStartOf="@id/form_btn"
+        app:layout_constraintStart_toEndOf="@id/chat_btn"
+        app:layout_constraintTop_toBottomOf="@id/expand_btn"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/form_btn"
+        android:layout_width="@dimen/icons_up"
+        android:layout_height="@dimen/icons_up"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/form"
+        app:tint="@color/white"
+        android:rotation="90"
+        app:layout_constraintEnd_toStartOf="@id/line_end"
+        app:layout_constraintStart_toEndOf="@id/group_btn"
+        app:layout_constraintTop_toBottomOf="@id/expand_btn">
+    </ImageButton>
+
+    <ImageView
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        app:layout_constraintStart_toEndOf="@id/group_btn"
+        app:layout_constraintBottom_toTopOf="@id/group_btn"
+        android:layout_marginStart="-7dp"
+        android:layout_marginBottom="-15dp"
+        android:src="@drawable/circle"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
