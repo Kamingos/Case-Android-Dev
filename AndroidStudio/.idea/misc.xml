@@ -3,12 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.167" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/chat.xml" value="0.167" />
         <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/circle.xml" value="0.1465" />
         <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/circle_gray.xml" value="0.2045" />
         <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/circle_red.xml" value="0.2045" />
         <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/expand_more.xml" value="0.1955" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic__.xml" value="0.1105" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_cam.xml" value="0.167" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_chat.xml" value="0.167" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_expand.xml" value="0.173" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_form.xml" value="0.1" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_group.xml" value="0.122" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_hand.xml" value="0.1" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_launcher_background.xml" value="0.167" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2565" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_launcher_forground.xml" value="0.2565" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_microphone.xml" value="0.1075" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_microphone_off.xml" value="0.1075" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/ic_videocam_off.xml" value="0.1075" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/drawable/rectangle.xml" value="0.2565" />
         <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/layout/person.xml" value="0.33" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1725" />
+        <entry key="..\:/Users/Evgeniy/Documents/GitHub/Case-Android-Dev/AndroidStudio/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2565" />
       </map>
     </option>
   </component>

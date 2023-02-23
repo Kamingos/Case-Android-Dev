@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray">
+    android:background="@color/dark_gray">
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -28,34 +28,35 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="16dp" />
+        app:layout_constraintGuide_end="24dp" />
 
     <ImageButton
         android:id="@+id/expand_btn"
         android:layout_width="35dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_marginTop="8dp"
         android:background="@null"
         android:scaleType="centerCrop"
-        android:src="@drawable/expand_more"
+        android:src="@drawable/ic_expand"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white" />
+        app:tint="@color/gray_white" />
 
     <ImageButton
         android:id="@+id/chat_btn"
         android:layout_width="@dimen/icons_up"
         android:layout_height="@dimen/icons_up"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@null"
         android:scaleType="fitXY"
-        android:src="@drawable/chat"
+        android:src="@drawable/ic_chat"
         app:layout_constraintEnd_toStartOf="@id/group_btn"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@id/line_start"
-        app:layout_constraintTop_toBottomOf="@id/expand_btn" />
+        app:layout_constraintTop_toBottomOf="@id/expand_btn"
+        app:tint="@color/white" />
 
     <ImageButton
         android:id="@+id/group_btn"
@@ -64,7 +65,7 @@
         android:layout_marginTop="8dp"
         android:background="@null"
         android:scaleType="fitXY"
-        android:src="@drawable/group"
+        android:src="@drawable/ic_group"
         app:layout_constraintEnd_toStartOf="@id/form_btn"
         app:layout_constraintStart_toEndOf="@id/chat_btn"
         app:layout_constraintTop_toBottomOf="@id/expand_btn"
@@ -75,11 +76,11 @@
         android:layout_width="@dimen/icons_up"
         android:layout_height="@dimen/icons_up"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:background="@null"
         android:rotation="90"
         android:scaleType="fitXY"
-        android:src="@drawable/form"
+        android:src="@drawable/ic_form"
         app:layout_constraintEnd_toStartOf="@id/line_end"
         app:layout_constraintStart_toEndOf="@id/group_btn"
         app:layout_constraintTop_toBottomOf="@id/expand_btn"
@@ -95,56 +96,77 @@
         app:layout_constraintStart_toEndOf="@id/group_btn" />
 
     <GridView
+        android:id="@+id/grid"
         android:layout_width="0dp"
-        android:layout_height="500dp"
+        android:layout_height="508dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/darker_gray"
         android:orientation="horizontal"
         app:layout_constraintEnd_toStartOf="@id/line_end"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/line_start"
-        app:layout_constraintTop_toBottomOf="@id/group_btn" />
+        app:layout_constraintTop_toBottomOf="@id/group_btn"
+        />
+
+    <ImageButton
+        android:id="@+id/square"
+        android:layout_width="50dp"
+        android:layout_height="6dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@id/micro_btn"
+        app:layout_constraintEnd_toStartOf="@id/line_end"
+        app:layout_constraintStart_toStartOf="@id/line_start" />
 
     <ImageButton
         android:id="@+id/video_btn"
         android:layout_width="@dimen/icons_down"
         android:layout_height="@dimen/icons_down"
+        android:layout_marginTop="32dp"
         android:background="@drawable/circle"
         android:scaleType="centerInside"
-        android:src="@drawable/cam"
-        app:layout_constraintBottom_toBottomOf="@id/line_bottom"
+        android:src="@drawable/ic_videocam"
+        app:layout_constraintBottom_toTopOf="@id/line_bottom"
         app:layout_constraintEnd_toStartOf="@id/micro_btn"
-        app:layout_constraintStart_toStartOf="@id/line_start" />
+        app:layout_constraintStart_toStartOf="@id/line_start"
+        app:layout_constraintTop_toBottomOf="@id/grid" />
 
     <ImageButton
         android:id="@+id/micro_btn"
         android:layout_width="@dimen/icons_down"
         android:layout_height="@dimen/icons_down"
+        android:layout_marginTop="32dp"
         android:background="@drawable/circle"
-        android:src="@drawable/mic"
-        app:layout_constraintBottom_toBottomOf="@id/line_bottom"
+        android:src="@drawable/ic_microphone"
+        app:layout_constraintBottom_toTopOf="@id/line_bottom"
         app:layout_constraintEnd_toStartOf="@id/react_btn"
-        app:layout_constraintStart_toEndOf="@id/video_btn" />
+        app:layout_constraintStart_toEndOf="@id/video_btn"
+        app:layout_constraintTop_toBottomOf="@id/grid" />
 
     <ImageButton
         android:id="@+id/react_btn"
         android:layout_width="@dimen/icons_down"
         android:layout_height="@dimen/icons_down"
+        android:layout_marginTop="32dp"
         android:background="@drawable/circle_gray"
-        android:src="@drawable/hand"
-        app:layout_constraintBottom_toBottomOf="@id/line_bottom"
+        android:src="@drawable/ic_hand"
+        app:layout_constraintBottom_toTopOf="@id/line_bottom"
         app:layout_constraintEnd_toStartOf="@id/leave_btn"
         app:layout_constraintStart_toEndOf="@id/micro_btn"
+        app:layout_constraintTop_toBottomOf="@id/grid"
         app:tint="@color/white" />
 
     <ImageButton
         android:id="@+id/leave_btn"
         android:layout_width="@dimen/icons_down"
         android:layout_height="@dimen/icons_down"
+        android:layout_marginTop="32dp"
         android:background="@drawable/circle_red"
-        android:src="@drawable/call_end"
-        app:layout_constraintBottom_toBottomOf="@id/line_bottom"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintBottom_toTopOf="@id/line_bottom"
         app:layout_constraintEnd_toStartOf="@id/line_end"
         app:layout_constraintStart_toEndOf="@id/react_btn"
+        app:layout_constraintTop_toBottomOf="@id/grid"
         app:tint="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
