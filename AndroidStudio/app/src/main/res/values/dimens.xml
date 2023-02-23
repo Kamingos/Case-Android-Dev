@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="icons_up">30dp</dimen>
+    <dimen name="icons_down">70dp</dimen>
+    <dimen name="person_bg_width">394dp</dimen>
+    <dimen name="person_bg_height">250dp</dimen>
+    <dimen name="person_avatar_diam">100dp</dimen>
+    <dimen name="person_text_size">16sp</dimen>
+    <dimen name="person_micro">24dp</dimen>
 </resources>

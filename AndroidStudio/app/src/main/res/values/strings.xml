@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Case-Android-Dev</string>
+    <string name="test_string">Этот текст был создан, чтобы облегчить нашу жизнь. Скажем спасибо ему, ведь теперь не придётся автоматически вводить текст!</string>
 </resources>
