@@ -96,7 +96,7 @@
         app:layout_constraintStart_toEndOf="@id/group_btn" />
 
     <GridView
-        android:id="@+id/grid"
+        android:id="@+id/grid_main"
         android:layout_width="0dp"
         android:layout_height="508dp"
         android:layout_marginTop="16dp"
@@ -129,7 +129,7 @@
         app:layout_constraintBottom_toTopOf="@id/line_bottom"
         app:layout_constraintEnd_toStartOf="@id/micro_btn"
         app:layout_constraintStart_toStartOf="@id/line_start"
-        app:layout_constraintTop_toBottomOf="@id/grid" />
+        app:layout_constraintTop_toBottomOf="@id/grid_main" />
 
     <ImageButton
         android:id="@+id/micro_btn"
@@ -141,7 +141,7 @@
         app:layout_constraintBottom_toTopOf="@id/line_bottom"
         app:layout_constraintEnd_toStartOf="@id/react_btn"
         app:layout_constraintStart_toEndOf="@id/video_btn"
-        app:layout_constraintTop_toBottomOf="@id/grid" />
+        app:layout_constraintTop_toBottomOf="@id/grid_main" />
 
     <ImageButton
         android:id="@+id/react_btn"
@@ -153,7 +153,7 @@
         app:layout_constraintBottom_toTopOf="@id/line_bottom"
         app:layout_constraintEnd_toStartOf="@id/leave_btn"
         app:layout_constraintStart_toEndOf="@id/micro_btn"
-        app:layout_constraintTop_toBottomOf="@id/grid"
+        app:layout_constraintTop_toBottomOf="@id/grid_main"
         app:tint="@color/white" />
 
     <ImageButton
@@ -166,7 +166,7 @@
         app:layout_constraintBottom_toTopOf="@id/line_bottom"
         app:layout_constraintEnd_toStartOf="@id/line_end"
         app:layout_constraintStart_toEndOf="@id/react_btn"
-        app:layout_constraintTop_toBottomOf="@id/grid"
+        app:layout_constraintTop_toBottomOf="@id/grid_main"
         app:tint="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
