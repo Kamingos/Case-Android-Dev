@@ -86,12 +86,18 @@
         app:layout_constraintTop_toBottomOf="@id/expand_btn"
         app:tint="@color/white" />
 
-    <ImageView
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <TextView
+        android:id="@+id/group_cnt"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginStart="-7dp"
         android:layout_marginBottom="-15dp"
-        android:src="@drawable/circle"
+        android:text="2"
+        android:gravity="center"
+        android:background="@drawable/circle"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/group_btn"
         app:layout_constraintStart_toEndOf="@id/group_btn" />
 
@@ -105,8 +111,7 @@
         app:layout_constraintEnd_toStartOf="@id/line_end"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/line_start"
-        app:layout_constraintTop_toBottomOf="@id/group_btn"
-        />
+        app:layout_constraintTop_toBottomOf="@id/group_btn" />
 
     <ImageButton
         android:id="@+id/square"
@@ -139,25 +144,25 @@
         android:background="@drawable/circle"
         android:src="@drawable/ic_microphone"
         app:layout_constraintBottom_toTopOf="@id/line_bottom"
-        app:layout_constraintEnd_toStartOf="@id/react_btn"
+        app:layout_constraintEnd_toStartOf="@id/hand_btn"
         app:layout_constraintStart_toEndOf="@id/video_btn"
         app:layout_constraintTop_toBottomOf="@id/grid_main" />
 
     <ImageButton
-        android:id="@+id/react_btn"
+        android:id="@+id/hand_btn"
         android:layout_width="@dimen/icons_down"
         android:layout_height="@dimen/icons_down"
         android:layout_marginTop="32dp"
         android:background="@drawable/circle_gray"
         android:src="@drawable/ic_hand"
         app:layout_constraintBottom_toTopOf="@id/line_bottom"
-        app:layout_constraintEnd_toStartOf="@id/leave_btn"
+        app:layout_constraintEnd_toStartOf="@id/exit_btn"
         app:layout_constraintStart_toEndOf="@id/micro_btn"
         app:layout_constraintTop_toBottomOf="@id/grid_main"
         app:tint="@color/white" />
 
     <ImageButton
-        android:id="@+id/leave_btn"
+        android:id="@+id/exit_btn"
         android:layout_width="@dimen/icons_down"
         android:layout_height="@dimen/icons_down"
         android:layout_marginTop="32dp"
@@ -165,7 +170,7 @@
         android:src="@drawable/ic_phone"
         app:layout_constraintBottom_toTopOf="@id/line_bottom"
         app:layout_constraintEnd_toStartOf="@id/line_end"
-        app:layout_constraintStart_toEndOf="@id/react_btn"
+        app:layout_constraintStart_toEndOf="@id/hand_btn"
         app:layout_constraintTop_toBottomOf="@id/grid_main"
         app:tint="@color/white" />
 

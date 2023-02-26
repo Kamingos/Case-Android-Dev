@@ -7,6 +7,7 @@ public class Contact {
         text_first = _text_first;
         text_second = _text_second;
         image = _image;
+        boolean isMicOn = false;
     }
 
     String text_first;

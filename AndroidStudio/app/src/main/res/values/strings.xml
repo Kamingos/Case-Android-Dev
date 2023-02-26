@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Case-Android-Dev</string>
     <string name="test_string">Этот текст был создан, чтобы облегчить нашу жизнь. Скажем спасибо ему, ведь теперь не придётся автоматически вводить текст!</string>
+    <string name="select_num">выберите элементы для перестановки\n( начиная с 1 )</string>
+    <string name="string_num_1">номер первого элемента</string>
+    <string name="string_num_2">номер второго элемента</string>
+
 </resources>
