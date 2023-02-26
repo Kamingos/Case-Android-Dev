@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_gray">
@@ -92,9 +91,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="-7dp"
         android:layout_marginBottom="-15dp"
-        android:text="2"
-        android:gravity="center"
         android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="2"
         android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -106,12 +105,11 @@
         android:layout_width="0dp"
         android:layout_height="508dp"
         android:layout_marginTop="16dp"
-        android:background="@android:color/darker_gray"
-        android:orientation="horizontal"
         app:layout_constraintEnd_toStartOf="@id/line_end"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/line_start"
-        app:layout_constraintTop_toBottomOf="@id/group_btn" />
+        app:layout_constraintTop_toBottomOf="@id/group_btn"
+        android:verticalSpacing="8dp"/>
 
     <ImageButton
         android:id="@+id/square"

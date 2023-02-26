@@ -4,5 +4,8 @@
     <string name="select_num">выберите элементы для перестановки\n( начиная с 1 )</string>
     <string name="string_num_1">номер первого элемента</string>
     <string name="string_num_2">номер второго элемента</string>
+    <string name="enterinfo_main">Введите нужную информацию</string>
+    <string name="enterinfo_1">Ваше имя</string>
+    <string name="enterinfo_2">Дополнительная информацию</string>
 
 </resources>

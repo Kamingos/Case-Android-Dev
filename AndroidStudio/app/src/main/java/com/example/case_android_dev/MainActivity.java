@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,24 +44,39 @@ public class MainActivity extends AppCompatActivity {
 
     boolean isVideoCamOn;
 
-    boolean isMicOn;
+    static boolean isMicOn;
+
+    AdapterMain adapterMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttons();
+        // грид и адаптер
+        GridView gridView = (GridView) findViewById(R.id.grid_main);
+        adapterMain = new AdapterMain(this, contacts_list);
+
+        // установка адаптера
+        gridView.setAdapter(adapterMain);
 
         // одноразовое добавление одного объекта в список
         contacts_list.add(new Contact("Ваш Аккаунт", "Номер 1", R.drawable.my_photo));
 
+        buttons();
+
+        // сообщение
+        Toast toast = Toast.makeText(MainActivity.this, "Чтобы добавить контактов\nнажмите на значок группы", Toast.LENGTH_LONG);
+        toast.show();
     }
 
     // для счётчика списка
     @Override
     protected void onResume() {
         super.onResume();
+
+        // обновление адаптера
+        adapterMain.notifyDataSetChanged();
 
         // кол-во элементов в списке: contacts_list
         groupCnt = (TextView) findViewById(R.id.group_cnt);
@@ -157,7 +173,6 @@ public class MainActivity extends AppCompatActivity {
         builder.setView(cl);
 
         // кнопки
-
         builder.setPositiveButton("Подтвердить", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -178,6 +193,9 @@ public class MainActivity extends AppCompatActivity {
 
                     // меняем элементы местами
                     Collections.swap(contacts_list, inputText1 - 1, inputText2 - 1);
+
+                    // обновление адаптера
+                    adapterMain.notifyDataSetChanged();
                 } else {
                     Toast toast = Toast.makeText(MainActivity.this, "Ошибка", Toast.LENGTH_LONG);
                     toast.show();

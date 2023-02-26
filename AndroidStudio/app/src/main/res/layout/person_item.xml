@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/person_bg"
-        android:layout_width="@dimen/person_bg_width"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/person_bg_height"
-        android:background="@color/purple_200"
+        android:scaleType="fitXY"
+        android:src="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundImageView"/>
 
-    <ImageView
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
         android:id="@+id/person_avatar"
         android:layout_width="@dimen/person_avatar_diam"
         android:layout_height="@dimen/person_avatar_diam"
-        android:scaleType="centerCrop"
-        android:src="@drawable/circle"
+        android:src="@drawable/my_photo"
         app:layout_constraintBottom_toBottomOf="@id/person_bg"
         app:layout_constraintEnd_toEndOf="@id/person_bg"
         app:layout_constraintStart_toStartOf="@id/person_bg"
-        app:layout_constraintTop_toTopOf="@id/person_bg" />
+        app:layout_constraintTop_toTopOf="@id/person_bg"
+        />
 
     <TextView
         android:id="@+id/person_text"
@@ -36,11 +43,12 @@
         android:textColor="@color/white"
         android:textSize="@dimen/person_text_size"
         android:textStyle="bold"
+        app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toBottomOf="@id/person_bg"
         app:layout_constraintEnd_toStartOf="@id/person_micro"
-        app:layout_constraintStart_toStartOf="@id/person_bg"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constrainedWidth="true"/>
+        app:layout_constraintStart_toStartOf="@id/person_bg"
+        />
 
     <ImageView
         android:id="@+id/person_micro"
@@ -49,11 +57,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/circle"
-        app:layout_constraintStart_toEndOf="@id/person_text"
+        android:src="@drawable/ic_microphone_off"
         app:layout_constraintBottom_toBottomOf="@id/person_bg"
         app:layout_constraintEnd_toEndOf="@id/person_bg"
-        />
+        app:layout_constraintStart_toEndOf="@id/person_text"
+        app:tint="@color/white" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
