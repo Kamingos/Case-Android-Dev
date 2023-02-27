@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
     TextView groupCnt;
 
+    ImageButton BtnExp;
+
     int inputText1;
 
     int inputText2;
@@ -61,7 +63,9 @@ public class MainActivity extends AppCompatActivity {
         gridView.setAdapter(adapterMain);
 
         // одноразовое добавление одного объекта в список
-        contacts_list.add(new Contact("Ваш Аккаунт", "Номер 1", R.drawable.my_photo));
+        if (contacts_list.size() < 1) {
+            contacts_list.add(new Contact("Вы", "галочка на главном экране тоже работает", R.drawable.my_photo, false));
+        }
 
         buttons();
 
@@ -85,6 +89,15 @@ public class MainActivity extends AppCompatActivity {
 
     // кнопки
     private void buttons() {
+
+        // кнопка галочки up
+        BtnExp = (ImageButton) findViewById(R.id.expand_btn);
+        BtnExp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                debugDialog();
+            }
+        });
 
         // кнопка сообщения up
         BtnMsg = (ImageButton) findViewById(R.id.chat_btn);
@@ -276,5 +289,30 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void debugDialog()
+    {
+        // алерт диалог
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("В этом окне всё, что есть в приложении ( на всякий случай )");
+        builder.setMessage("1. я сделал поддержку дневной и ночной темы, т.к сам пользуюсь ночной\n" +
+                "2. Можно добовлять, удалять и перемешивать контакты\n" +
+                "3. На главном экране можно прокручивать пользователей, когда их больше 2\n" +
+                "4. Все свои действия сохранял на GitHub\n\n" +
+                "Хочу от себя сказать, что это был классный опыт. за 6 дней я с нуля всё это изучил и воплатил в жизнь, это классно");
+
+        // кнопка
+        builder.setNegativeButton("Закрыть", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+
+
+        });
+
+        // вызов
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
 
 }
